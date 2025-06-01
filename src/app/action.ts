@@ -39,6 +39,6 @@ export async function createSubdomainAction(state: any, formData: FormData) {
     createdAt: Date.now(),
   });
 
-  await redis.expire(`subdomain:${subdomain}`, 10)
+  await redis.expire(`subdomain:${subdomain}`, 3600)
   redirect(`${protocol}://${subdomain}.${rootDomain}`);
 }
