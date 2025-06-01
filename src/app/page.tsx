@@ -1,5 +1,5 @@
 import React from "react";
-import { TextEffect } from "../../components/motion-primitives/text-effect";
+import { TextEffect } from "../components/motion-primitives/text-effect";
 import SubdomainForm from "@/components/subdomain-form";
 import { redis } from "@/lib/redis";
 import { protocol, rootDomain } from "@/lib/utils";
